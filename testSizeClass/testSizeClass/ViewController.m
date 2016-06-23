@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSArray *array = @[@"5sdwe", @"kgc", @"sdfgerg3"];
+    NSArray *sortArr = [array sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"length" ascending:YES]]];
+    NSLog(@"%@", sortArr);
 }
 
 - (void)didReceiveMemoryWarning {
